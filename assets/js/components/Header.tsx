@@ -6,7 +6,7 @@ const Header: React.FC = () => (
       <nav role="navigation">
         <ul>
           <li>
-            <a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a>
+            <a href="https://hexdocs.pm/phoenix/overview.html">Comenzar con Phoenix</a>
           </li>
         </ul>
       </nav>

@@ -21,31 +21,30 @@ export default class CounterPage extends React.Component<{}, CounterState> {
   public render(): JSX.Element {
     return (
       <Main>
-        <h1>Counter</h1>
+        <h1>Contador</h1>
         <p>
-          The Counter is the simplest example of what you can do with a React
-          component.
+          Este contador es un simple ejemplo de lo que se puede hacer con los componentes de Reactjs
         </p>
         <p>
-          Current count: <strong>{this.state.currentCount}</strong>
+          Cuenta actual: <strong>{this.state.currentCount}</strong>
         </p>
         {/* We apply an onClick event to these buttons to their corresponding functions */}
         <button className="button" onClick={this.incrementCounter}>
-          Increment counter
+          Incrementar contador
         </button>{' '}
         <button
           className="button button-outline"
           onClick={this.decrementCounter}
         >
-          Decrement counter
+          Restar contador
         </button>{' '}
         <button className="button button-clear" onClick={this.resetCounter}>
-          Reset counter
+          Resetear contador
         </button>
         <br />
         <br />
         <p>
-          <Link to="/">Back to home</Link>
+          <Link to="/">Volver a la portada</Link>
         </p>
       </Main>
     );

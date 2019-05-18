@@ -23,7 +23,7 @@ interface FetchDataExampleState {
 export default class FetchDataPage extends React.Component<
   {},
   FetchDataExampleState
-> {
+  > {
   constructor(props: {}) {
     super(props);
     this.state = { languages: [], loading: true };
@@ -41,8 +41,8 @@ export default class FetchDataPage extends React.Component<
       <table>
         <thead>
           <tr>
-            <th>Language</th>
-            <th>Example proverb</th>
+            <th>Idioma</th>
+            <th>Proverbio de ejemplo</th>
           </tr>
         </thead>
         <tbody>
@@ -60,24 +60,23 @@ export default class FetchDataPage extends React.Component<
   public render(): JSX.Element {
     const content = this.state.loading ? (
       <p>
-        <em>Loading...</em>
+        <em>Cargando...</em>
       </p>
     ) : (
-      FetchDataPage.renderLanguagesTable(this.state.languages)
-    );
+        FetchDataPage.renderLanguagesTable(this.state.languages)
+      );
 
     return (
       <Main>
-        <h1>Fetch Data</h1>
+        <h1>Obtener datos</h1>
         <p>
-          This component demonstrates fetching data from the Phoenix API
-          endpoint.
+          Este componente demuestra como obtener datos desde un enpoint con Phoenix
         </p>
         {content}
         <br />
         <br />
         <p>
-          <Link to="/">Back to home</Link>
+          <Link to="/">Volver a la portada</Link>
         </p>
       </Main>
     );

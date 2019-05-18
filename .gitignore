@@ -41,3 +41,4 @@ node_modules/
 # variables.
 /config/*.secret.exs
 /.elixir_ls
+.elixir_ls
